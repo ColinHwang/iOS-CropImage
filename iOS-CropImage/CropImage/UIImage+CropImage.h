@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, UIImageCropStyle) {  // CropStylt   裁切类型
 - (UIImage *)imageByCropToSquare;
 
 /**
- *  Returns a new image which is cropped by sepecial style. The rect of original image should be rectangle.
+ *  Returns a new image which is cropped by specified style. The rect of original image should be rectangle.
  *
  *  @param style  Cropped style.
  */
