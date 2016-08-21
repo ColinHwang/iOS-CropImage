@@ -1,4 +1,4 @@
-# iOS-CropImage
+# iOS-CropImage [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/colinhwang/iOS-CropImage/master/LICENSE)&nbsp;
 Category methods of UIImage to crop image in the way specified by rect, scale or cropped style.
 
 See more: http://www.colinhwang.com/2016/05/30/crop-image
