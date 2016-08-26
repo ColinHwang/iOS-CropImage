@@ -61,16 +61,18 @@
 
 - (UIImage *)imageByCropToRect:(CGRect)rect scale:(BOOL)scale
 {
+    CGFloat scaleFactor = 1.f;
     if (scale)
     {
-        rect.origin.x *= self.scale; // Point -> Px
-        rect.origin.y *= self.scale;
-        rect.size.width *= self.scale;
-        rect.size.height *= self.scale;
+        scaleFactor = self.scale;
+        rect.origin.x *= scaleFactor; // Point -> Px
+        rect.origin.y *= scaleFactor;
+        rect.size.width *= scaleFactor;
+        rect.size.height *= scaleFactor;
     }
     if (rect.size.width <= 0 || rect.size.height <= 0) return nil;
     CGImageRef imageRef = CGImageCreateWithImageInRect(self.CGImage, rect);
-    UIImage *image = [UIImage imageWithCGImage:imageRef scale:self.scale orientation:self.imageOrientation];
+    UIImage *image = [UIImage imageWithCGImage:imageRef scale:scaleFactor orientation:self.imageOrientation];
     CGImageRelease(imageRef);
     return image;
 }

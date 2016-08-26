@@ -76,7 +76,8 @@
 //    image = [image imageByCropStyle:UIImageCropStyleBottom];
 //    image = [image imageByCropStyle:UIImageCropStyleLeft];
 //    image = [image imageByCropStyle:UIImageCropStyleRight];
-//    image = [image imageByCropToRect:CGRectMake(0, 0, 50, 50)];
+//    image = [image imageByCropToRect:CGRectMake(0, 0, 100, 100)];
+//    image = [image imageByCropToRect:CGRectMake(0, 0, 100, 100) scale:NO];
     
     [self.imageView setImage:image];
 }
